@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти — ЗВІРЯТА</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">ЗВІ<span>РЯ</span>ТА</a>
+    <ul class="nav-links">
+      <li><a href="index.html#animals">Тварини</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="Services.html">Послуги</a></li>
+      <li><a href="blog.html">Блог</a></li>
+      <li><a href="contacts.html" class="active">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-deco"></div>
+    <div class="hero-deco"></div>
+    <div class="breadcrumb">
+      <a href="index.html">Головна</a>
+      <span>/</span>
+      <span style="color: var(--accent);">Контакти</span>
+    </div>
+    <span class="page-hero-tag">Адреса · Телефон · Запис</span>
+    <h1 class="page-hero-title">Ми завжди<br><em>поруч</em></h1>
+    <p class="page-hero-sub">Запишіться онлайн, зателефонуйте або просто завітайте — ми раді кожному хвостатому гостю та його господарю.</p>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Гортати</span>
+    </div>
+  </div>
+
+  <!-- EMERGENCY BANNER -->
+  <section id="emergency">
+    <div class="emergency-inner">
+      <div class="emergency-text">
+        <p class="section-label">Екстрена допомога</p>
+        <h2 class="emergency-title">Ваш вихованець потребує<br><em>термінової допомоги?</em></h2>
+        <p class="emergency-subtitle">Ми чергуємо щодня. Дзвоніть — відповімо негайно.</p>
+      </div>
+      <div>
+        <a href="tel:+380971234567" class="emergency-phone">+38 097 123 45 67</a>
+        <p class="emergency-note">Цілодобово · 7 днів на тиждень</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO STRIP -->
+  <section id="contact-strip">
+    <div class="contact-strip-inner">
+      <a href="tel:+380971234567" class="contact-strip-item">
+        <div class="strip-icon">◯</div>
+        <div class="strip-label">Телефон</div>
+        <div class="strip-value">+38 097 123 45 67<br>+38 063 987 65 43</div>
+        <div class="strip-note">Пн–Сб: 09:00–20:00</div>
+      </a>
+      <a href="mailto:info@zviriata.ua" class="contact-strip-item">
+        <div class="strip-icon">✦</div>
+        <div class="strip-label">Електронна пошта</div>
+        <div class="strip-value">info@zviriata.ua</div>
+        <div class="strip-note">Відповідаємо протягом 2 годин</div>
+      </a>
+      <a href="#contact-main" class="contact-strip-item">
+        <div class="strip-icon">△</div>
+        <div class="strip-label">Адреса</div>
+        <div class="strip-value">вул. Садова, 14<br>м. Івано-Франківськ</div>
+        <div class="strip-note">Поруч з центральним ринком</div>
+      </a>
+      <a href="#schedule" class="contact-strip-item">
+        <div class="strip-icon">♡</div>
+        <div class="strip-label">Графік роботи</div>
+        <div class="strip-value">Пн–Пт: 09:00–20:00<br>Сб–Нд: 10:00–18:00</div>
+        <div class="strip-note">Ветеринар — щодня</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- MAP + FORM -->
+  <section id="contact-main">
+    <div class="contact-main-inner">
+
+      <!-- MAP (CSS-only візуалізація) -->
+      <div class="contact-map">
+        <div class="map-visual">
+          <div class="map-streets"></div>
+          <div class="map-pin">
+            <div class="map-pin-head"></div>
+            <div class="map-pin-shadow"></div>
+          </div>
+        </div>
+        <div class="map-address-tag">
+          <strong>вул. Садова, 14</strong>
+          <span>Івано-Франківськ · Зоомагазин «Звірята»</span>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <p class="section-label">Написати нам</p>
+        <h2 class="section-title">Залиште<br><em>повідомлення</em></h2>
+        <div class="divider"></div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Ім'я</label>
+            <input type="text" class="form-input" placeholder="Ваше ім'я">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Телефон</label>
+            <input type="tel" class="form-input" placeholder="+38 0__ ___ __ __">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Електронна пошта</label>
+          <input type="email" class="form-input" placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Тема звернення</label>
+          <div class="form-select-wrap">
+            <select class="form-select form-input">
+              <option value="" disabled selected>Оберіть тему</option>
+              <option>Запис до ветеринара</option>
+              <option>Груминг та стрижка</option>
+              <option>Готель для тварин</option>
+              <option>Дієтологічна консультація</option>
+              <option>Зоопсихологія</option>
+              <option>Загальне питання</option>
+              <option>Інше</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Повідомлення</label>
+          <textarea class="form-textarea" placeholder="Опишіть ваше питання або ситуацію..."></textarea>
+        </div>
+
+        <button type="button" class="form-submit">Надіслати повідомлення</button>
+        <p class="form-note">Натискаючи кнопку, ви погоджуєтесь на обробку персональних даних.<br>Ми не передаємо інформацію третім особам.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE + CONTACTS -->
+  <section id="schedule">
+    <div class="schedule-inner">
+
+      <div class="schedule-left">
+        <p class="section-label">Графік роботи</p>
+        <h2 class="section-title">Ми відчинені<br><em>майже завжди</em></h2>
+        <div class="divider"></div>
+
+        <table class="schedule-table">
+          <tbody>
+            <tr>
+              <td>Понеділок <span class="schedule-badge">Сьогодні</span></td>
+              <td>09:00 — 20:00</td>
+            </tr>
+            <tr>
+              <td>Вівторок</td>
+              <td>09:00 — 20:00</td>
+            </tr>
+            <tr>
+              <td>Середа</td>
+              <td>09:00 — 20:00</td>
+            </tr>
+            <tr>
+              <td>Четвер</td>
+              <td>09:00 — 20:00</td>
+            </tr>
+            <tr>
+              <td>П'ятниця</td>
+              <td>09:00 — 20:00</td>
+            </tr>
+            <tr>
+              <td>Субота</td>
+              <td>10:00 — 18:00</td>
+            </tr>
+            <tr>
+              <td>Неділя</td>
+              <td>10:00 — 16:00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p style="font-size:.78rem; color:var(--muted); margin-top:1.5rem; line-height:1.65;">
+          Ветеринар чергує щодня, включаючи вихідні. Для термінових випадків — цілодобова гаряча лінія.
+        </p>
+      </div>
+
+      <div class="schedule-right">
+        <p class="section-label" style="margin-bottom:1.5rem;">Зв'язатись з нами</p>
+        <div class="contact-cards">
+
+          <a href="tel:+380971234567" class="contact-card">
+            <div class="contact-card-icon">◯</div>
+            <div class="contact-card-body">
+              <div class="contact-card-label">Основний телефон</div>
+              <div class="contact-card-value">+38 097 123 45 67</div>
+              <div class="contact-card-note">Прийом замовлень та запис на прийом</div>
+            </div>
+          </a>
+
+          <a href="tel:+380639876543" class="contact-card">
+            <div class="contact-card-icon">◯</div>
+            <div class="contact-card-body">
+              <div class="contact-card-label">Ветеринарна лінія</div>
+              <div class="contact-card-value">+38 063 987 65 43</div>
+              <div class="contact-card-note">Цілодобово — для термінових випадків</div>
+            </div>
+          </a>
+
+          <a href="mailto:info@zviriata.ua" class="contact-card">
+            <div class="contact-card-icon">✦</div>
+            <div class="contact-card-body">
+              <div class="contact-card-label">Пошта</div>
+              <div class="contact-card-value">info@zviriata.ua</div>
+              <div class="contact-card-note">Відповідаємо протягом 2 годин у робочі дні</div>
+            </div>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">△</div>
+            <div class="contact-card-body">
+              <div class="contact-card-label">Адреса магазину</div>
+              <div class="contact-card-value">вул. Садова, 14, Івано-Франківськ</div>
+              <div class="contact-card-note">Поруч з центральним ринком · є парковка</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">◇</div>
+            <div class="contact-card-body">
+              <div class="contact-card-label">Як дістатися</div>
+              <div class="contact-card-value">Автобус № 5, 12, 23</div>
+              <div class="contact-card-note">Зупинка «Центральний ринок» · 2 хв пішки</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE BOOKING -->
+  <section id="booking">
+    <div class="booking-inner">
+
+      <div class="booking-text">
+        <p class="section-label">Онлайн-запис</p>
+        <h2 class="section-title">Запишіться за<br><em>три кроки</em></h2>
+        <div class="divider"></div>
+        <p>Обирайте зручний час не виходячи з дому. Підтвердження прийде на вашу пошту або SMS протягом кількох хвилин.</p>
+
+        <div class="booking-steps">
+          <div class="booking-step">
+            <div class="booking-step-num">01</div>
+            <div class="booking-step-content">
+              <div class="booking-step-title">Оберіть послугу та спеціаліста</div>
+              <p class="booking-step-text">Ветеринар, грумер, дієтолог або зоопсихолог — вкажіть, хто вам потрібен і до кого ви хочете потрапити.</p>
+            </div>
+          </div>
+          <div class="booking-step">
+            <div class="booking-step-num">02</div>
+            <div class="booking-step-content">
+              <div class="booking-step-title">Вкажіть зручний час</div>
+              <p class="booking-step-text">Оберіть день та часовий слот з вільних варіантів. Розклад оновлюється щодня.</p>
+            </div>
+          </div>
+          <div class="booking-step">
+            <div class="booking-step-num">03</div>
+            <div class="booking-step-content">
+              <div class="booking-step-title">Підтвердіть запис</div>
+              <p class="booking-step-text">Залиште контактні дані та коротко опишіть ситуацію. Ми зателефонуємо для підтвердження.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form">
+        <div class="booking-form-title">Записатися на прийом</div>
+        <div class="booking-form-sub">Заповніть форму — зателефонуємо протягом 30 хвилин</div>
+
+        <div class="form-group">
+          <label class="form-label">Ваше ім'я та прізвище</label>
+          <input type="text" class="form-input" placeholder="Марія Шевченко">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Контактний телефон</label>
+          <input type="tel" class="form-input" placeholder="+38 0__ ___ __ __">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Ім'я та вид тварини</label>
+          <input type="text" class="form-input" placeholder="Мурчик · кіт · 3 роки">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Послуга</label>
+          <div class="form-select-wrap">
+            <select class="form-select form-input">
+              <option value="" disabled selected>Оберіть послугу</option>
+              <option>Первинний огляд</option>
+              <option>Вакцинація</option>
+              <option>Груминг та стрижка</option>
+              <option>Дієтологічна консультація</option>
+              <option>Зоопсихологія</option>
+              <option>Готель для тварин</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Бажаний час</label>
+          <div class="form-select-wrap">
+            <select class="form-select form-input">
+              <option value="" disabled selected>Оберіть час</option>
+              <option>Ранок (09:00–12:00)</option>
+              <option>День (12:00–16:00)</option>
+              <option>Вечір (16:00–20:00)</option>
+              <option>Будь-який вільний</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="form-submit">Надіслати заявку</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL LINKS -->
+  <section id="social-strip">
+    <div class="social-strip-inner">
+      <div class="social-strip-text">
+        <p class="section-label">Ми в соцмережах</p>
+        <p>Слідкуйте за нами — корисні поради, фото вихованців та актуальні новини щодня.</p>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <span class="social-link-icon">◯</span>
+          Instagram
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-link-icon">✦</span>
+          Facebook
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-link-icon">△</span>
+          TikTok
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-link-icon">♡</span>
+          YouTube
+        </a>
+        <a href="#" class="social-link">
+          <span class="social-link-icon">◇</span>
+          Telegram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">ЗВІ<span>РЯ</span>ТА</div>
+    <p>© 2025 Зоомагазин «Звірята». Усі права захищено.</p>
+    <p>Зроблено з ♥ для ваших улюбленців</p>
+  </footer>
+
+</body>
+</html>
